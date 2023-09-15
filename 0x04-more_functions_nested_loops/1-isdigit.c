@@ -1,11 +1,18 @@
 #include "main.h"
+#include "ctype.h"
 /**
- * mul - multiply 2 int
- * @a: first int
- * @b: second int
- * Return: addition of the multiplicattion
+ * _isdigit - checks for a digit (0 through 9).
+ * @c: Char to be checked
+ * Return: 1 if c is a digit, 0 otherwise
  */
-int mul(int a, int b)
+int _isdigit(int c)
 {
-	return (a * b);
+	if (isdigit(c))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
