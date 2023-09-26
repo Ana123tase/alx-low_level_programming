@@ -1,4 +1,5 @@
-#include <unstd.h>
+#include "main.h"
+#include <unistd.h>
 /**
  * _putcah - writes the character c to stdout
  * @c: the character to print
@@ -6,5 +7,5 @@
  */
 int _putchar(char c)
 {
-	return (write(1, $c, 1));
+	return (write(1, &c, 1));
 }
