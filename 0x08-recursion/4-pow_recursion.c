@@ -2,6 +2,7 @@
 /**
  * _pow_recursion - the power of a number
  * @x: number
+ * @y: a number
  * Return: th result of the power
  */
 int _pow_recursion(int x, int y)
