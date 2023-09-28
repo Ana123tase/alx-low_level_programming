@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * power_operation - return the natural ootof 
+ * power_operation - return the natural root of 
  * a number
  * @n: input
  * @c: iterator
@@ -12,11 +12,11 @@ int sqrt_a(int a, int b)
 	{
 		return (b);
 	}
-	else if (b * b > 4)
+	else if (b * b > a)
 	{
 		return (-1);
 	}
-	return (sqrt_a(a, b + 1);
+	return (sqrt_a(a, b + 1));
 }
 /**
  * _sqrt_recursion - returns he natura square root
