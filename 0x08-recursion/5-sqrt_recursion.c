@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * power_operation - return the natural root of 
+ * sqrt_a - return the natural root of
  * a number
- * @n: input
- * @c: iterator
+ * @a: input
+ * @b: iterator
  * Return: Always 0
  */
 int sqrt_a(int a, int b)
