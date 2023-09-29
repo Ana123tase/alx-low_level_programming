@@ -1,29 +1,28 @@
 #include "main.h"
+
 /**
- * sqrt_a - return the natural root of
- * a number
- * @a: input
- * @b: iterator
- * Return: Always 0
- */
-int sqrt_a(int a, int b)
-{
-	if (b * b == a)
-	{
-		return (b);
-	}
-	else if (b * b > a)
-	{
-		return (-1);
-	}
-	return (sqrt_a(a, b + 1));
-}
-/**
- * _sqrt_recursion - returns he natura square root
- * @n: input
- * Return: Always 0
+ * _sqrt_recursion - main funct
+ * @n: int n
+ * Return: int
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrt_a(n, 0));
+	return (_sqrt(n, 1));
+}
+
+/**
+ * _sqrt - _sqrt_recursion
+ * @n: integer paramtr
+ * @i: integer parameter
+ * Return: sqrt
+ */
+int _sqrt(int n, int i)
+{
+	if (n < 0)
+		return (-1);
+	if ((i * i) > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (_sqrt(n, i + 1));
 }
