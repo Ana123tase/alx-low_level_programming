@@ -1,18 +1,20 @@
 #include "main.h"
+
 /**
- * factorial - get the factorial of a number
- * @n: factorial to factorize
- * Return: Always 0
+ * factorial - factorial n
+ * @n: integer arams
+ * Return: recursion
  */
+
 int factorial(int n)
 {
-	if (n == 0)
-	{
-		return (1);
-	}
-	else if (n < 0)
+	if (n < 0)
 	{
 		return (-1);
+	}
+	if (n == 1)
+	{
+		return (1);
 	}
 	return (n * factorial(n - 1));
 }
